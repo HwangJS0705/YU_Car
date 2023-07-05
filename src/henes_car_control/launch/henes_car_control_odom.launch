@@ -15,7 +15,7 @@
     
   <include file="$(find handsfree_ros_imu)/launch/handsfree_imu.launch" />
   
-  <param name="imu_offest"  type="double"    value="30.0"/>
+  <param name="imu_offest_angle"  type="double"    value="30.0"/>
   <node pkg="henes_car_control" type="henes_car_control_node" name="henes_base_control_node" output="screen"/>
      
   <node pkg="henes_car_control" type="odom_path_node.py" name="path_node"/> 
